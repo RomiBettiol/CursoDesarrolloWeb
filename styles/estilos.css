@@ -1,0 +1,552 @@
+@charset "UTF-8";
+/*Generales*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Niramit", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: bisque;
+}
+
+body {
+  background-color: bisque;
+}
+
+@-webkit-keyframes efectoImagen {
+  0% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+  25% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  50% {
+    -webkit-transform: rotateX(270deg);
+            transform: rotateX(270deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+@keyframes efectoImagen {
+  0% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+  25% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  50% {
+    -webkit-transform: rotateX(270deg);
+            transform: rotateX(270deg);
+  }
+  100% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+}
+
+header {
+  background-color: #a2453d;
+  padding-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header h1 {
+  color: bisque;
+  font-size: 60px;
+  margin-left: 20px;
+  margin-top: 50px;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+header #apertura {
+  /*logo de la empresa*/
+  margin-left: 10px;
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  margin-left: 50px;
+  -webkit-animation-name: efectoImagen;
+          animation-name: efectoImagen;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+/*MENU GENERAL*/
+#btn-menu {
+  display: none;
+}
+
+.labelMenu {
+  display: none;
+  height: 30px;
+  width: 100%;
+  padding-bottom: 38px;
+  padding-right: 20px;
+  background-color: #333;
+}
+
+.labelMenu .lista {
+  width: 30px;
+  height: 30px;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+.menuPrincipal {
+  z-index: 500;
+}
+
+.menuPrincipal ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #333;
+}
+
+.menuPrincipal ul li a {
+  display: block;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  list-style: none;
+}
+
+.menuPrincipal ul li:hover {
+  background-color: #a2453d;
+}
+
+@media (max-width: 780px) {
+  header h1 {
+    font-size: 20px;
+    margin-top: 30px;
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
+  }
+  header #apertura {
+    width: 100px;
+    height: 100px;
+    margin-left: 2px;
+  }
+  header a {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  .labelMenu {
+    display: block;
+  }
+  .labelMenu:hover {
+    cursor: pointer;
+  }
+  .menuPrincipal {
+    position: absolute;
+    background-color: #333;
+    width: 70%;
+    margin-left: -70%;
+    z-index: 500;
+  }
+  .menuPrincipal ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menuPrincipal li {
+    border-top: 1px solid bisque;
+  }
+  #btn-menu:checked ~ .menuPrincipal {
+    margin: 0;
+  }
+}
+
+footer {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+  margin-bottom: 5px;
+}
+
+footer .redes .pieDePagina {
+  width: 30px;
+}
+
+.bannerInicio {
+  /*imagen de inicio*/
+  width: 100%;
+  height: 450px;
+  background-image: url("../imagenes/viñas.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.bannerInicio .buttonInicio {
+  /*boton ver productos*/
+  font-family: "Niramit", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: black;
+  margin-top: 200px;
+  margin-left: 20%;
+  border: #333;
+  width: 200px;
+  height: 50px;
+}
+
+.container {
+  width: 800px;
+  margin: 45px 0;
+  display: felx;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .parrafoNosotros {
+  margin-top: 25px;
+  margin-left: 20%;
+  font-family: "Niramit", sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: "Niramit", sans-serif;
+  font-size: 35px;
+  margin-left: 90px;
+  margin-top: 25px;
+}
+
+.articulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  background-color: #333;
+  border-radius: 20px;
+}
+
+.articulos .containerPresentacion {
+  background-color: #bb6942;
+  -webkit-transition: background-color 1s linear;
+  transition: background-color 1s linear;
+  width: 25%;
+  background-color: #a2453d;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 10px -6px black;
+          box-shadow: 0px 10px 10px -6px black;
+  background-color: #bb6942;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.articulos .containerPresentacion:hover {
+  background-color: bisque;
+}
+
+.articulos .containerPresentacion .fotosPresentacionRomi {
+  width: 110px;
+  height: 109px;
+  border-radius: 20px;
+}
+
+.articulos .containerPresentacion .presentacionParrafosNosotros {
+  font-family: "Niramit", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 4px;
+}
+
+.articulos .containerPresentacion .tituloNombreNosotros {
+  font-family: "Niramit", sans-serif;
+  color: bisque;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 930px) {
+  .articulos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .articulos .containerPresentacion {
+    width: 45%;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
+
+.contenedorIniciarSesion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.contenedorIniciarSesion .parteRegistrarse {
+  background-color: #a2453d;
+  height: 440px;
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  text-align: center;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.contenedorIniciarSesion .parteRegistrarse .tituloParteRegistrarse {
+  font-family: "Niramit", sans-serif;
+  font-size: 35px;
+  margin-left: 25px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color: bisque;
+}
+
+.contenedorIniciarSesion .parteRegistrarse .parrafoRegistrarse {
+  font-size: 16px;
+  font-family: "Niramit", sans-serif;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.contenedorIniciarSesion .parteRegistrarse .botonRegistrarse {
+  background-color: transparent;
+  border-color: #FFFFFF;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform 80ms ease-in;
+  transition: -webkit-transform 80ms ease-in;
+  transition: transform 80ms ease-in;
+  transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
+  font-family: "Niramit", sans-serif;
+}
+
+.parteIniciarSesion {
+  background-color: white;
+  height: 440px;
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.parteIniciarSesion .tituloIniciarSesion {
+  font-family: "Niramit", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.parteIniciarSesion .parrafoIniciarSesion {
+  font-size: 16px;
+  font-family: "Niramit", sans-serif;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.parteIniciarSesion .formularioIniciarSesion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.parteIniciarSesion .formularioIniciarSesion .inputIniciarSesion {
+  background-color: #eee;
+  border: none;
+  padding: 8px;
+  margin: 8px 0;
+  width: 200px;
+  font-family: "Niramit", sans-serif;
+}
+
+.parteIniciarSesion .botonIniciarSesion {
+  border-radius: 20px;
+  border: 1px solid #a2453d;
+  background-color: #a2453d;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-transform 80ms ease-in;
+  transition: -webkit-transform 80ms ease-in;
+  transition: transform 80ms ease-in;
+  transition: transform 80ms ease-in, -webkit-transform 80ms ease-in;
+  font-family: "Niramit", sans-serif;
+  transition: transform 80ms ease-in;
+}
+
+.imagenIniciarSesion {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+.extra {
+  display: none;
+  font-family: "Niramit", sans-serif;
+}
+
+.extraLink {
+  color: #a2453d;
+}
+
+@media (max-width: 780px) {
+  .contenedorIniciarSesion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contenedorIniciarSesion .parteRightIniciarSesion {
+    display: none;
+  }
+  .contenedorIniciarSesion .parteRegistrarse {
+    display: none;
+  }
+  .extra {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 5%;
+  }
+}
+
+/*BUCLE - EACH - MAPS - DESPUES BORRAR*/
+.h-1 {
+  font-size: 20%;
+}
+
+.h-2 {
+  font-size: 40%;
+}
+
+.h-3 {
+  font-size: 60%;
+}
+
+.btn--grande {
+  background-color: #333;
+}
+
+.btn--mediano {
+  background-color: red;
+}
+
+.btn--chico {
+  background-color: blue;
+}
+/*# sourceMappingURL=estilos.css.map */

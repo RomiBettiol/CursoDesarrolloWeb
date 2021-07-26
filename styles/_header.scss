@@ -1,0 +1,138 @@
+//variables
+
+$titulo: "Niramit", sans serif;
+$colorPrincipal: bisque;
+$colorSecundario: #a2453d;
+
+header{
+    background-color: $colorSecundario;
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-around;
+
+    h1{
+        color: $colorPrincipal;
+        font-size: 60px;
+        margin-left: 20px;
+        margin-top: 50px;
+        flex-basis: 60%;
+    }
+    
+    #apertura{ /*logo de la empresa*/
+        margin-left: 10px;
+        display: inline-block;
+        width:180px;
+        height: 180px;
+        margin-left: 50px;
+        animation-name: efectoImagen;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+    }
+}
+
+/*MENU GENERAL*/
+
+#btn-menu{
+        display: none;
+}
+
+.labelMenu{
+    display: none;
+    height: 30px;
+    width: 100%;
+    padding-bottom: 38px;
+    padding-right: 20px;
+    background-color:#333;
+
+    .lista{
+        width: 30px;
+        height: 30px;
+        margin-left: 8px;
+        margin-top: 5px;
+    }
+
+}
+
+.menuPrincipal{
+    z-index: 500;
+}
+
+.menuPrincipal ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+
+    li{
+        a{
+            display: block;
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            list-style: none;
+        }
+        
+        &:hover{
+            background-color: $colorSecundario;
+        }
+    }
+}
+
+@media (max-width: 780px){
+    header{
+        h1{
+            font-size: 20px;
+            margin-top: 30px;
+            flex-basis: 55%;
+        }
+
+        #apertura{
+            width: 100px;
+            height: 100px;
+            margin-left: 2px;
+        }
+
+        a{
+            font-size: 14px;
+            margin-right: 5px;
+        }
+    }
+
+    .labelMenu{
+        display: block;
+    }
+
+    .labelMenu:hover{
+        cursor: pointer;
+    }
+
+    .menuPrincipal{
+        position: absolute;
+        background-color: #333;
+        width: 70%;
+        margin-left: -70%;
+        z-index: 500;
+    }
+
+    .menuPrincipal ul{
+        flex-direction: column;
+    }
+
+    .menuPrincipal li{
+        border-top: 1px solid $colorPrincipal;
+    }
+
+    #btn-menu:checked ~ .menuPrincipal{
+        margin: 0;
+    }
+    
+}
+
+    
+   
+
+
+
+
