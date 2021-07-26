@@ -18,5 +18,14 @@ footer{
    
 }
 
+@media (max-width: 640px){
+    .redes{
+        justify-content: space-around;
+
+        .pieDePagina{
+            width: 25px;
+        }
+    }
+}
 
 

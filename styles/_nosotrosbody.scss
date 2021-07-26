@@ -80,12 +80,17 @@ h2{
         flex-wrap: wrap;
 
         .containerPresentacion{
-            width: 45%;
+            width: 90%;
         }
     }
 
     h2{
-        font-size: 25px;
+        font-size: 22px;
+        margin-left: 6%;
+    }
+
+    .container{
+        width: 100%;
     }
 }
 
