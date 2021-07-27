@@ -162,8 +162,21 @@
         justify-content: center;
         align-items: center;
     }
-    
 
+    .grillasBoton{
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+    
+    .grillas2{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modalFotoVino{
+        display: none;
+    }
 }
 
 
