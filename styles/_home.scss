@@ -20,17 +20,7 @@
 
 @media (max-width: 1024px){
     .bannerInicio{
-        height: 80vh;
-
-        .buttonInicio{
-            margin-left: 10%;
-        }
-    }
-}
-
-@media only screen and (min-width: 780px) and (max-width: 840px){
-    .bannerInicio{
-        height: 7vh;
+        height: 100vh;
 
         .buttonInicio{
             margin-left: 10%;

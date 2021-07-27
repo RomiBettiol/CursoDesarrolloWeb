@@ -281,16 +281,7 @@ footer .redes .pieDePagina {
 
 @media (max-width: 1024px) {
   .bannerInicio {
-    height: 80vh;
-  }
-  .bannerInicio .buttonInicio {
-    margin-left: 10%;
-  }
-}
-
-@media only screen and (min-width: 780px) and (max-width: 840px) {
-  .bannerInicio {
-    height: 7vh;
+    height: 100vh;
   }
   .bannerInicio .buttonInicio {
     margin-left: 10%;
