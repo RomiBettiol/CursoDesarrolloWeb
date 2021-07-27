@@ -81,6 +81,14 @@ header h1 {
       flex-basis: 60%;
 }
 
+header .imgHeader {
+  display: none;
+}
+
+header .tituloHeader {
+  display: none;
+}
+
 header #apertura {
   /*logo de la empresa*/
   margin-left: 10px;
@@ -147,15 +155,36 @@ header #apertura {
 
 @media (max-width: 780px) {
   header h1 {
-    font-size: 20px;
-    margin-top: 30px;
-    -ms-flex-preferred-size: 55%;
-        flex-basis: 55%;
+    display: none;
+  }
+  header .inicioSesion {
+    display: none;
+  }
+  header .imgHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 28px;
+    height: 28px;
+    margin-top: 10%;
+  }
+  header .tituloHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: bisque;
+    font-size: 30px;
+    text-align: center;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   header #apertura {
     width: 100px;
     height: 100px;
-    margin-left: 2px;
+    margin-left: 0px;
   }
   header a {
     font-size: 14px;
@@ -218,6 +247,16 @@ footer .redes .pieDePagina {
   width: 30px;
 }
 
+@media (max-width: 640px) {
+  .redes {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .redes .pieDePagina {
+    width: 25px;
+  }
+}
+
 .bannerInicio {
   /*imagen de inicio*/
   width: 100%;
@@ -238,6 +277,24 @@ footer .redes .pieDePagina {
   border: #333;
   width: 200px;
   height: 50px;
+}
+
+@media (max-width: 640px) {
+  .bannerInicio {
+    height: 67vh;
+  }
+  .bannerInicio .buttonInicio {
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 760px) {
+  .bannerInicio {
+    height: 71vh;
+  }
+  .bannerInicio .buttonInicio {
+    margin-left: 10%;
+  }
 }
 
 .container {
@@ -329,16 +386,20 @@ h2 {
   text-align: center;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 740px) {
   .articulos {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .articulos .containerPresentacion {
-    width: 45%;
+    width: 90%;
   }
   h2 {
-    font-size: 25px;
+    font-size: 22px;
+    margin-left: 6%;
+  }
+  .container {
+    width: 100%;
   }
 }
 

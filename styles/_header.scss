@@ -17,7 +17,15 @@ header{
         margin-top: 50px;
         flex-basis: 60%;
     }
+
+    .imgHeader{
+        display: none;
+    }
     
+    .tituloHeader{
+        display: none;
+    }
+
     #apertura{ /*logo de la empresa*/
         margin-left: 10px;
         display: inline-block;
@@ -83,15 +91,33 @@ header{
 @media (max-width: 780px){
     header{
         h1{
-            font-size: 20px;
-            margin-top: 30px;
-            flex-basis: 55%;
+            display: none;
+        }
+
+        .inicioSesion{
+            display: none;
+        }
+
+        .imgHeader{
+            display: flex;
+            align-items: center;
+            width: 28px;
+            height: 28px;
+            margin-top: 10%;
+        }
+
+        .tituloHeader{
+            display: flex;
+            color: $colorPrincipal;
+            font-size: 30px;
+            text-align: center;
+            flex-basis: 50%;
         }
 
         #apertura{
             width: 100px;
             height: 100px;
-            margin-left: 2px;
+            margin-left: 0px;
         }
 
         a{
@@ -130,7 +156,6 @@ header{
     
 }
 
-    
    
 
 

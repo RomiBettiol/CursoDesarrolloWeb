@@ -20,7 +20,20 @@
 
 @media (max-width: 640px){
     .bannerInicio{
-        height: 66vh;
+        height: 67vh;
+
+        .buttonInicio{
+            margin-left: 10%;
+        }
     }
 }
 
+@media only screen and (min-width: 640px) and (max-width: 760px){
+    .bannerInicio{
+        height: 71vh;
+
+        .buttonInicio{
+            margin-left: 10%;
+        }
+    }
+}
