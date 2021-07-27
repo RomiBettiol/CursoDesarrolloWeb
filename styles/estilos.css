@@ -279,18 +279,19 @@ footer .redes .pieDePagina {
   height: 50px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .bannerInicio {
-    height: 67vh;
+    height: 51em;
+    width: 100%;
   }
   .bannerInicio .buttonInicio {
     margin-left: 10%;
   }
 }
 
-@media only screen and (min-width: 640px) and (max-width: 760px) {
+@media only screen and (min-width: 780px) and (max-width: 840px) {
   .bannerInicio {
-    height: 71vh;
+    height: 72vh;
   }
   .bannerInicio .buttonInicio {
     margin-left: 10%;
