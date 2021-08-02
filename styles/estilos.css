@@ -177,6 +177,10 @@ header .imgHeader {
   }
   .labelMenu {
     display: block;
+    height: 8vh;
+  }
+  .labelMenu .lista {
+    margin-top: 3%;
   }
   .labelMenu:hover {
     cursor: pointer;
@@ -196,9 +200,6 @@ header .imgHeader {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .menuPrincipal li {
-    border-top: 1px solid bisque;
   }
   #btn-menu:checked ~ .menuPrincipal {
     margin: 0;
@@ -237,15 +238,18 @@ footer .redes .pieDePagina {
 
 @media (max-width: 780px) {
   .grillasPieInicio {
-    height: 9vh;
+    height: 8vh;
   }
   .grillasPieInicio .redes {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .grillasPieInicio .redes .pieDePagina {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -273,7 +277,7 @@ footer .redes .pieDePagina {
 
 @media (max-width: 780px) {
   .bannerInicio {
-    height: 67vh;
+    height: 68vh;
   }
   .bannerInicio .buttonInicio {
     height: 40%;

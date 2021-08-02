@@ -20,14 +20,15 @@ footer{
 
 @media (max-width: 780px){
     .grillasPieInicio{
-        height: 9vh;
+        height: 8vh;
 
         .redes{
             justify-content: space-around;
+            align-items: center;
 
             .pieDePagina{
-                width: 25px;
-                height: 25px;
+                width: 30px;
+                height: 30px;
             }
         }
     }

@@ -112,6 +112,11 @@ header{
 
     .labelMenu{
         display: block;
+        height: 8vh;
+
+        .lista{
+            margin-top: 3%;
+        }
     }
 
     .labelMenu:hover{
@@ -131,9 +136,7 @@ header{
         flex-direction: column;
     }
 
-    .menuPrincipal li{
-        border-top: 1px solid $colorPrincipal;
-    }
+
 
     #btn-menu:checked ~ .menuPrincipal{
         margin: 0;
