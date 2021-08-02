@@ -131,6 +131,11 @@
     .contenedorIniciarSesion{
         flex-direction: column;
 
+        .parteIniciarSesion{
+            height: 500px;
+            justify-content: center;
+        }
+
         .parteRightIniciarSesion{
             display: none;
         }
@@ -144,23 +149,6 @@
     }
 }
  
-/*BUCLE - EACH - MAPS - DESPUES BORRAR*/
-
-@for $i from 1 through 3{
-    .h-#{$i}{font-size: 20% * $i;}
-}
-
-$fondos:(
-    grande: #333,
-    mediano: red,
-    chico: blue
-);
-
-@each $name-color, $bgcolor in $fondos{
-    .btn--#{$name-color}{
-        background-color: $bgcolor;
-    }
-}
 
 
 

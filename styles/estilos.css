@@ -593,6 +593,12 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .contenedorIniciarSesion .parteIniciarSesion {
+    height: 500px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .contenedorIniciarSesion .parteRightIniciarSesion {
     display: none;
   }
@@ -605,30 +611,5 @@ h2 {
     display: flex;
     margin-top: 5%;
   }
-}
-
-/*BUCLE - EACH - MAPS - DESPUES BORRAR*/
-.h-1 {
-  font-size: 20%;
-}
-
-.h-2 {
-  font-size: 40%;
-}
-
-.h-3 {
-  font-size: 60%;
-}
-
-.btn--grande {
-  background-color: #333;
-}
-
-.btn--mediano {
-  background-color: red;
-}
-
-.btn--chico {
-  background-color: blue;
 }
 /*# sourceMappingURL=estilos.css.map */
