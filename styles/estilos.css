@@ -96,6 +96,10 @@ header #apertura {
           animation-duration: 5s;
 }
 
+header .imgHeader {
+  display: none;
+}
+
 /*MENU GENERAL*/
 #btn-menu {
   display: none;
@@ -161,6 +165,11 @@ header #apertura {
   header a {
     font-size: 14px;
     margin-right: 5px;
+  }
+  header .imgHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .labelMenu {
     display: block;

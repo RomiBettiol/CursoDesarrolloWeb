@@ -28,6 +28,10 @@ header{
         animation-iteration-count: infinite;
         animation-duration: 5s;
     }
+
+    .imgHeader{
+        display: none;
+    }
 }
 
 /*MENU GENERAL*/
@@ -98,6 +102,10 @@ header{
         a{
             font-size: 14px;
             margin-right: 5px;
+        }
+
+        .imgHeader{
+            display: flex;
         }
     }
 
