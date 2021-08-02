@@ -104,12 +104,16 @@ h2{
     }   
 }
 
-@media (max-width: 740px){
+@media (max-width: 780px){
     .articulos{
         flex-wrap: wrap;
 
         .containerPresentacion{
             width: 95%;
+
+            .presentacionParrafosNosotros{
+                font-size: 16px;
+            }
         }
     }
 
@@ -123,6 +127,7 @@ h2{
 
         .parrafoNosotros{
             margin-left: 5%;
+            font-size: 18px;
         }
     }
     

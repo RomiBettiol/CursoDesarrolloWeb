@@ -176,10 +176,6 @@ header .imgHeader {
   }
   .labelMenu {
     display: block;
-    height: 8vh;
-  }
-  .labelMenu .lista {
-    margin-top: 3%;
   }
   .labelMenu:hover {
     cursor: pointer;
@@ -404,13 +400,16 @@ h2 {
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 780px) {
   .articulos {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .articulos .containerPresentacion {
     width: 95%;
+  }
+  .articulos .containerPresentacion .presentacionParrafosNosotros {
+    font-size: 16px;
   }
   h2 {
     font-size: 22px;
@@ -421,6 +420,7 @@ h2 {
   }
   .container .parrafoNosotros {
     margin-left: 5%;
+    font-size: 18px;
   }
 }
 
