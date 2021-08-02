@@ -209,6 +209,47 @@ header .imgHeader {
   }
 }
 
+@media (max-width: 780px) {
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 18vh;
+  }
+  header h1 {
+    font-size: 25px;
+    margin-top: 40px;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    text-align: center;
+  }
+  header #apertura {
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin-left: 0px;
+  }
+  header .imgHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .inicioSesion a {
+    display: none;
+  }
+  .labelMenu {
+    height: 6vh;
+  }
+  .labelMenu .lista {
+    margin-top: 1%;
+  }
+  .menuPrincipal {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 footer {
   background-color: black;
   display: -webkit-box;
@@ -246,9 +287,22 @@ footer .redes .pieDePagina {
   .grillasPieInicio .redes {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin: auto;
+  }
+  .grillasPieInicio .redes .pieDePagina {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 780px) {
+  .grillasPieInicio {
+    height: 8vh;
+  }
+  .grillasPieInicio .redes {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: auto;
   }
   .grillasPieInicio .redes .pieDePagina {
     width: 30px;
@@ -283,11 +337,10 @@ footer .redes .pieDePagina {
     height: 68vh;
   }
   .bannerInicio .buttonInicio {
-    height: 40%;
+    height: 15%;
     width: 37%;
-    margin-top: 35%;
+    margin-top: 55%;
     margin-left: 5%;
-    border-radius: 20px;
     -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
             box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }

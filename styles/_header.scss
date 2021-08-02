@@ -147,5 +147,45 @@ header{
     
 }
 
+@media (max-width: 780px){
+    header{
+        justify-content: center;
+        height: 18vh;
+
+        h1{
+            font-size: 25px;
+            margin-top: 40px;
+            flex-basis: 70%;
+            text-align: center;
+        }
+
+        #apertura{
+            display: none;
+            width: 50px;
+            height: 50px;
+            margin-left: 0px;
+        }
+
+        .imgHeader{
+            display: flex;
+        }
+
+        .inicioSesion a{
+            display: none;
+        }
+    }
+
+    .labelMenu{
+        height: 6vh;
+
+        .lista{
+            margin-top: 1%;
+        }
+    }
+
+    .menuPrincipal{
+        align-items: center;
+    }   
+}
     
    

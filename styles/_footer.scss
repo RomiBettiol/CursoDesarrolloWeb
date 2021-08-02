@@ -24,7 +24,23 @@ footer{
 
         .redes{
             justify-content: space-around;
-            align-items: center;
+            margin: auto;
+
+            .pieDePagina{
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 780px){
+    .grillasPieInicio{
+        height: 8vh;
+
+        .redes{
+            justify-content: space-around;
+            margin: auto;
 
             .pieDePagina{
                 width: 30px;
