@@ -36,7 +36,7 @@ h2{
         width: 25%;
         background-color: #a2453d;
         border-radius: 15px;
-        box-shadow: 0px 10px 10px -6px black;
+        box-shadow: 0px 10px 10px -6px rgb(59, 55, 55);
         background-color:#bb6942;
         display: flex;
         flex-direction: column;
@@ -73,6 +73,35 @@ h2{
         }
 
       }
+}
+
+@media (max-width: 1366px){
+    .articulos{
+        flex-wrap: wrap;
+
+        .containerPresentacion{
+            width: 45%;
+
+            .presentacionParrafosNosotros{
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+
+    h2{
+        font-size: 40px;
+        margin-left: 5%;
+    }
+
+    .container{
+        width: 100%;
+
+        .parrafoNosotros{
+            margin-left: 5%;
+            font-size: 23px;
+        }
+    }   
 }
 
 @media (max-width: 740px){

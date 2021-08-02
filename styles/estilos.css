@@ -64,21 +64,23 @@ body {
 
 header {
   background-color: #a2453d;
-  padding-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+  width: 100%;
 }
 
 header h1 {
   color: bisque;
-  font-size: 60px;
-  margin-left: 20px;
-  margin-top: 50px;
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  font-size: 40px;
+  margin-left: 20%;
+  margin-top: 65px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 header .imgHeader {
@@ -91,11 +93,9 @@ header .tituloHeader {
 
 header #apertura {
   /*logo de la empresa*/
-  margin-left: 10px;
   display: inline-block;
   width: 180px;
   height: 180px;
-  margin-left: 50px;
   -webkit-animation-name: efectoImagen;
           animation-name: efectoImagen;
   -webkit-animation-iteration-count: infinite;
@@ -153,67 +153,17 @@ header #apertura {
   background-color: #a2453d;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 1280px) {
   header h1 {
-    display: none;
-  }
-  header .inicioSesion {
-    display: none;
-  }
-  header .imgHeader {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 28px;
-    height: 28px;
-    margin-top: 10%;
-  }
-  header .tituloHeader {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    color: bisque;
-    font-size: 30px;
-    text-align: center;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-  }
-  header #apertura {
-    width: 100px;
-    height: 100px;
-    margin-left: 0px;
+    margin-left: 50px;
   }
   header a {
-    font-size: 14px;
-    margin-right: 5px;
+    font-size: 18px;
   }
-  .labelMenu {
-    display: block;
-  }
-  .labelMenu:hover {
-    cursor: pointer;
-  }
-  .menuPrincipal {
-    position: absolute;
-    background-color: #333;
-    width: 70%;
-    margin-left: -70%;
-    z-index: 500;
-  }
-  .menuPrincipal ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .menuPrincipal li {
-    border-top: 1px solid bisque;
-  }
-  #btn-menu:checked ~ .menuPrincipal {
-    margin: 0;
+  .menuPrincipal ul li a {
+    font-size: 17px;
   }
 }
 
@@ -247,13 +197,18 @@ footer .redes .pieDePagina {
   width: 30px;
 }
 
-@media (max-width: 640px) {
-  .redes {
+@media (max-width: 1280px) {
+  .grillasPieInicio {
+    height: 8vh;
+  }
+  .grillasPieInicio .redes {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding-top: 6px;
   }
-  .redes .pieDePagina {
-    width: 25px;
+  .grillasPieInicio .redes .pieDePagina {
+    width: 40px;
+    height: 40px;
   }
 }
 
@@ -279,12 +234,16 @@ footer .redes .pieDePagina {
   height: 50px;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1280px) {
   .bannerInicio {
-    height: 67vh;
+    height: 69vh;
   }
   .bannerInicio .buttonInicio {
-    margin-left: 10%;
+    height: 15%;
+    width: 30%;
+  }
+  .bannerInicio .buttonInicio a {
+    font-size: 22px;
   }
 }
 
@@ -332,8 +291,8 @@ h2 {
   width: 25%;
   background-color: #a2453d;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 10px 10px -6px black;
-          box-shadow: 0px 10px 10px -6px black;
+  -webkit-box-shadow: 0px 10px 10px -6px #3b3737;
+          box-shadow: 0px 10px 10px -6px #3b3737;
   background-color: #bb6942;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -375,6 +334,31 @@ h2 {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
+}
+
+@media (max-width: 1366px) {
+  .articulos {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .articulos .containerPresentacion {
+    width: 45%;
+  }
+  .articulos .containerPresentacion .presentacionParrafosNosotros {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: 40px;
+    margin-left: 5%;
+  }
+  .container {
+    width: 100%;
+  }
+  .container .parrafoNosotros {
+    margin-left: 5%;
+    font-size: 23px;
+  }
 }
 
 @media (max-width: 740px) {

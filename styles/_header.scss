@@ -6,16 +6,17 @@ $colorSecundario: #a2453d;
 
 header{
     background-color: $colorSecundario;
-    padding-top: 16px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding-top: 10px;
+    width: 100%;
 
     h1{
         color: $colorPrincipal;
-        font-size: 60px;
-        margin-left: 20px;
-        margin-top: 50px;
-        flex-basis: 60%;
+        font-size: 40px;
+        margin-left: 20%;
+        margin-top: 65px;
+        flex-basis: 50%;
     }
 
     .imgHeader{
@@ -27,11 +28,9 @@ header{
     }
 
     #apertura{ /*logo de la empresa*/
-        margin-left: 10px;
         display: inline-block;
         width:180px;
         height: 180px;
-        margin-left: 50px;
         animation-name: efectoImagen;
         animation-iteration-count: infinite;
         animation-duration: 5s;
@@ -88,76 +87,19 @@ header{
     }
 }
 
-@media (max-width: 780px){
+@media (max-width: 1280px){
     header{
         h1{
-            display: none;
-        }
-
-        .inicioSesion{
-            display: none;
-        }
-
-        .imgHeader{
-            display: flex;
-            align-items: center;
-            width: 28px;
-            height: 28px;
-            margin-top: 10%;
-        }
-
-        .tituloHeader{
-            display: flex;
-            color: $colorPrincipal;
-            font-size: 30px;
-            text-align: center;
             flex-basis: 50%;
-        }
-
-        #apertura{
-            width: 100px;
-            height: 100px;
-            margin-left: 0px;
+            margin-left: 50px;
         }
 
         a{
-            font-size: 14px;
-            margin-right: 5px;
+            font-size: 18px;
         }
     }
 
-    .labelMenu{
-        display: block;
+    .menuPrincipal ul li a{
+        font-size: 17px;
     }
-
-    .labelMenu:hover{
-        cursor: pointer;
-    }
-
-    .menuPrincipal{
-        position: absolute;
-        background-color: #333;
-        width: 70%;
-        margin-left: -70%;
-        z-index: 500;
-    }
-
-    .menuPrincipal ul{
-        flex-direction: column;
-    }
-
-    .menuPrincipal li{
-        border-top: 1px solid $colorPrincipal;
-    }
-
-    #btn-menu:checked ~ .menuPrincipal{
-        margin: 0;
-    }
-    
 }
-
-   
-
-
-
-
