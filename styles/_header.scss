@@ -6,31 +6,24 @@ $colorSecundario: #a2453d;
 
 header{
     background-color: $colorSecundario;
+    padding-top: 16px;
     display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    width: 100%;
+    justify-content: space-around;
 
     h1{
         color: $colorPrincipal;
-        font-size: 40px;
-        margin-left: 20%;
-        margin-top: 65px;
-        flex-basis: 50%;
-    }
-
-    .imgHeader{
-        display: none;
+        font-size: 60px;
+        margin-left: 20px;
+        margin-top: 50px;
+        flex-basis: 60%;
     }
     
-    .tituloHeader{
-        display: none;
-    }
-
     #apertura{ /*logo de la empresa*/
+        margin-left: 10px;
         display: inline-block;
         width:180px;
         height: 180px;
+        margin-left: 50px;
         animation-name: efectoImagen;
         animation-iteration-count: infinite;
         animation-duration: 5s;
@@ -87,19 +80,55 @@ header{
     }
 }
 
-@media (max-width: 1280px){
+@media (max-width: 780px){
     header{
         h1{
-            flex-basis: 50%;
-            margin-left: 50px;
+            font-size: 20px;
+            margin-top: 30px;
+            flex-basis: 55%;
+        }
+
+        #apertura{
+            width: 100px;
+            height: 100px;
+            margin-left: 2px;
         }
 
         a{
-            font-size: 18px;
+            font-size: 14px;
+            margin-right: 5px;
         }
     }
 
-    .menuPrincipal ul li a{
-        font-size: 17px;
+    .labelMenu{
+        display: block;
     }
+
+    .labelMenu:hover{
+        cursor: pointer;
+    }
+
+    .menuPrincipal{
+        position: absolute;
+        background-color: #333;
+        width: 70%;
+        margin-left: -70%;
+        z-index: 500;
+    }
+
+    .menuPrincipal ul{
+        flex-direction: column;
+    }
+
+    .menuPrincipal li{
+        border-top: 1px solid $colorPrincipal;
+    }
+
+    #btn-menu:checked ~ .menuPrincipal{
+        margin: 0;
+    }
+    
 }
+
+    
+   
