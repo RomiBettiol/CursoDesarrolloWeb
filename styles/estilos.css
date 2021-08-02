@@ -150,27 +150,36 @@ header .imgHeader {
 }
 
 @media (max-width: 780px) {
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   header h1 {
     font-size: 20px;
-    margin-top: 30px;
-    -ms-flex-preferred-size: 55%;
-        flex-basis: 55%;
+    margin-top: 40px;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
   }
   header #apertura {
     width: 100px;
     height: 100px;
-    margin-left: 2px;
-  }
-  header a {
-    display: none;
+    margin-left: 0px;
   }
   header .imgHeader {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+  header .inicioSesion a {
+    display: none;
+  }
   .labelMenu {
     display: block;
+    height: 8vh;
+  }
+  .labelMenu .lista {
+    margin-top: 3%;
   }
   .labelMenu:hover {
     cursor: pointer;
@@ -181,6 +190,9 @@ header .imgHeader {
     width: 70%;
     margin-left: -70%;
     z-index: 500;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .menuPrincipal ul {
     -webkit-box-orient: vertical;
@@ -226,18 +238,17 @@ footer .redes .pieDePagina {
   width: 30px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 780px) {
   .grillasPieInicio {
-    height: 8vh;
+    height: 7vh;
   }
   .grillasPieInicio .redes {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding-top: 6px;
   }
   .grillasPieInicio .redes .pieDePagina {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -263,16 +274,19 @@ footer .redes .pieDePagina {
   height: 50px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 780px) {
   .bannerInicio {
-    height: 69vh;
+    height: 67vh;
   }
   .bannerInicio .buttonInicio {
-    height: 15%;
-    width: 30%;
+    height: 60%;
+    width: 37%;
+    margin-top: 25%;
+    margin-left: 5%;
+    border-radius: 20px;
   }
   .bannerInicio .buttonInicio a {
-    font-size: 22px;
+    font-size: 1rem;
   }
 }
 

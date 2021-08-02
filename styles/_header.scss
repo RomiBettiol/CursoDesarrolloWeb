@@ -86,29 +86,37 @@ header{
 
 @media (max-width: 780px){
     header{
+        justify-content: center;
+
         h1{
             font-size: 20px;
-            margin-top: 30px;
-            flex-basis: 55%;
+            margin-top: 40px;
+            flex-basis: 50%;
         }
 
         #apertura{
             width: 100px;
             height: 100px;
-            margin-left: 2px;
-        }
-
-        a{
-            display: none;
+            margin-left: 0px;
         }
 
         .imgHeader{
             display: flex;
         }
+
+        .inicioSesion a{
+            display: none;
+        }
     }
+
 
     .labelMenu{
         display: block;
+        height: 8vh;
+
+        .lista{
+            margin-top: 3%;
+        }
     }
 
     .labelMenu:hover{
@@ -121,6 +129,7 @@ header{
         width: 70%;
         margin-left: -70%;
         z-index: 500;
+        align-items: center;
     }
 
     .menuPrincipal ul{
