@@ -151,7 +151,6 @@ header .imgHeader {
 
 @media (max-width: 780px) {
   header h1 {
-    display: none;
     font-size: 20px;
     margin-top: 30px;
     -ms-flex-preferred-size: 55%;
@@ -163,8 +162,7 @@ header .imgHeader {
     margin-left: 2px;
   }
   header a {
-    font-size: 14px;
-    margin-right: 5px;
+    display: none;
   }
   header .imgHeader {
     display: -webkit-box;
