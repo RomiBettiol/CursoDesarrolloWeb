@@ -23,11 +23,13 @@
         height: 67vh;
 
         .buttonInicio{
-            height: 60%;
+            height: 40%;
             width: 37%;
-            margin-top: 25%;
+            margin-top: 35%;
             margin-left: 5%;
             border-radius: 20px;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+            0 10px 10px rgba(0,0,0,0.22);
 
             a{
                 font-size: 1rem;
