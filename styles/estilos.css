@@ -81,10 +81,6 @@ header h1 {
       flex-basis: 60%;
 }
 
-header .tituloHeader {
-  display: none;
-}
-
 header #apertura {
   /*logo de la empresa*/
   margin-left: 10px;
@@ -152,14 +148,10 @@ header #apertura {
 @media (max-width: 780px) {
   header h1 {
     display: none;
-  }
-  header .tituloHeader {
-    color: bisque;
-    font-size: 60px;
-    margin-left: 20px;
-    margin-top: 50px;
-    -ms-flex-preferred-size: 60%;
-        flex-basis: 60%;
+    font-size: 20px;
+    margin-top: 30px;
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%;
   }
   header #apertura {
     width: 100px;
