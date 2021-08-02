@@ -155,16 +155,19 @@ header .imgHeader {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 18vh;
   }
   header h1 {
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 40px;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
+    text-align: center;
   }
   header #apertura {
-    width: 100px;
-    height: 100px;
+    display: none;
+    width: 50px;
+    height: 50px;
     margin-left: 0px;
   }
   header .imgHeader {
@@ -177,10 +180,10 @@ header .imgHeader {
   }
   .labelMenu {
     display: block;
-    height: 8vh;
+    height: 6vh;
   }
   .labelMenu .lista {
-    margin-top: 3%;
+    margin-top: 1%;
   }
   .labelMenu:hover {
     cursor: pointer;

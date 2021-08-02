@@ -87,16 +87,19 @@ header{
 @media (max-width: 780px){
     header{
         justify-content: center;
+        height: 18vh;
 
         h1{
-            font-size: 20px;
+            font-size: 30px;
             margin-top: 40px;
-            flex-basis: 50%;
+            flex-basis: 70%;
+            text-align: center;
         }
 
         #apertura{
-            width: 100px;
-            height: 100px;
+            display: none;
+            width: 50px;
+            height: 50px;
             margin-left: 0px;
         }
 
@@ -112,10 +115,10 @@ header{
 
     .labelMenu{
         display: block;
-        height: 8vh;
+        height: 6vh;
 
         .lista{
-            margin-top: 3%;
+            margin-top: 1%;
         }
     }
 
