@@ -57,7 +57,7 @@ h2{
 
         .presentacionParrafosNosotros{
             font-family: "Niramit", sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             text-align: center;
             padding-left: 2px;
             padding-right: 2px;
@@ -75,12 +75,12 @@ h2{
       }
 }
 
-@media (max-width: 1366px){
+@media (min-widht: 1366px){
     .articulos{
         flex-wrap: wrap;
 
         .containerPresentacion{
-            width: 45%;
+            width: 80%;
 
             .presentacionParrafosNosotros{
                 font-size: 20px;

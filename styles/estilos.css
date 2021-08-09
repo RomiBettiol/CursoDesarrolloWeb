@@ -68,18 +68,18 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header h1 {
   color: bisque;
   font-size: 60px;
-  margin-left: 20px;
+  margin-left: 50px;
   margin-top: 50px;
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 
 header #apertura {
@@ -265,7 +265,38 @@ footer {
   padding: 10px 0;
 }
 
-footer .redes {
+footer .parrafoFooter2 {
+  font-family: "Niramit", sans serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+  color: gray;
+  margin-top: 1%;
+}
+
+footer .parrafoRedes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .parrafoRedes .parrafoFooter {
+  font-family: "Niramit", sans serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: gray;
+  letter-spacing: 18px;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding-top: 3%;
+}
+
+footer .parrafoRedes .redes {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +307,7 @@ footer .redes {
   margin-bottom: 5px;
 }
 
-footer .redes .pieDePagina {
+footer .parrafoRedes .redes .pieDePagina {
   width: 30px;
 }
 
@@ -423,7 +454,7 @@ h2 {
 
 .articulos .containerPresentacion .presentacionParrafosNosotros {
   font-family: "Niramit", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   padding-left: 2px;
   padding-right: 2px;
@@ -438,13 +469,13 @@ h2 {
   text-align: center;
 }
 
-@media (max-width: 1366px) {
+@media (min-widht: 1366px) {
   .articulos {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
   .articulos .containerPresentacion {
-    width: 45%;
+    width: 80%;
   }
   .articulos .containerPresentacion .presentacionParrafosNosotros {
     font-size: 20px;
@@ -674,5 +705,87 @@ h2 {
     display: flex;
     margin-top: 5%;
   }
+}
+
+.opcionesProductos1 {
+  background-color: gray;
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.opcionesProductos1 .btn {
+  line-height: 35px;
+  height: 50px;
+  margin-left: 2px;
+  width: 230px;
+  cursor: pointer;
+}
+
+.opcionesProductos1 .btn-two {
+  color: #a2453d;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.opcionesProductos1 .btn-two span {
+  z-index: 500;
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.opcionesProductos1 .btn-two::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid #a2453d;
+  background-color: #a2453d;
+}
+
+.opcionesProductos1 .btn-two::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid #a2453d;
+  background-color: #a2453d;
+}
+
+.opcionesProductos1 .btn-two:hover::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.opcionesProductos1 .btn-two:hover::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: rgba(255, 255, 255, 0);
 }
 /*# sourceMappingURL=estilos.css.map */

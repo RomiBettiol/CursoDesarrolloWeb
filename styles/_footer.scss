@@ -5,16 +5,41 @@ footer{
     align-items: center;
     padding: 10px 0;
 
-    .redes {
+    .parrafoFooter2{
+        font-family: $titulo;
+        font-weight: 500;
+        font-size: 0.7rem;
+        color: gray;
+        margin-top: 1%;
+    }
+
+    .parrafoRedes{
         display: flex;
         justify-content: space-between;
-        width: 300px;
-        margin-bottom: 5px;
+        align-items: center;
 
-        .pieDePagina{
-            width: 30px;
+        .parrafoFooter{
+            font-family: $titulo;
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: gray;
+            letter-spacing: 18px;
+            flex-basis: 60%;
+            padding-top: 3%;
+        }
+
+        .redes {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+            margin-bottom: 5px;
+    
+            .pieDePagina{
+                width: 30px;
+            }
         }
     }
+
    
 }
 
