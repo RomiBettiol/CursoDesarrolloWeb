@@ -20,7 +20,7 @@
         0 10px 10px rgba(0,0,0,0.22);
 
         .tituloParteRegistrarse{
-            font-family: "Niramit", sans-serif;
+            font-family: $titulo;
             font-size: ($nroLetras*2)+3;
             margin-left: 25px;
             margin-top: 100px;

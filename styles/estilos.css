@@ -307,10 +307,6 @@ footer .parrafoRedes .redes {
   margin-bottom: 5px;
 }
 
-footer .parrafoRedes .redes .pieDePagina {
-  width: 30px;
-}
-
 @media (max-width: 780px) {
   .grillasPieInicio {
     height: 8vh;
@@ -320,13 +316,12 @@ footer .parrafoRedes .redes .pieDePagina {
         justify-content: space-around;
     margin: auto;
   }
-  .grillasPieInicio .redes .pieDePagina {
-    width: 30px;
-    height: 30px;
+  .grillasPieInicio .parrafoFooter {
+    display: none;
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 640px) {
   .grillasPieInicio {
     height: 8vh;
   }
@@ -336,8 +331,11 @@ footer .parrafoRedes .redes .pieDePagina {
     margin: auto;
   }
   .grillasPieInicio .redes .pieDePagina {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+  }
+  .grillasPieInicio .parrafoFooter {
+    display: none;
   }
 }
 
@@ -558,7 +556,7 @@ h2 {
 }
 
 .contenedorIniciarSesion .parteRegistrarse .tituloParteRegistrarse {
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
   font-size: 35px;
   margin-left: 25px;
   margin-top: 100px;
@@ -707,10 +705,193 @@ h2 {
   }
 }
 
-.opcionesProductos1 {
-  background-color: gray;
-  width: 100%;
-  height: 50vh;
+.grillas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5%;
+}
+
+.grillas .nav {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.grillas .grillasBoton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grillas .grillas2 {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.grillas .grillas2 .articulo1 .card .card-body .tituloVino {
+  font-family: "Niramit", sans-serif;
+  color: bisque;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.grillas .grillas2 .articulo1 .card .card-body .precio {
+  text-align: center;
+  font-family: "Niramit", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.grillas .grillas2 .articulo1 .modal-title {
+  font-family: "Niramit", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #a2453d;
+}
+
+.grillas .grillas2 .articulo1 .modalFotoVino {
+  width: 200px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.grillas .grillas2 .articulo1 .textoDescripcionVino {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.grillas .grillas2 .articulo1 .textoDescripcionVino .descripcionVino {
+  text-align: center;
+  font-family: "Niramit", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.grillas .grillas2 .articulo1 .textoDescripcionVino .precioVino {
+  font-size: 20px;
+  color: #a2453d;
+  font-family: "Niramit", sans-serif;
+}
+
+.grillas .botonPalabra {
+  color: #a2453d;
+  font-family: "Niramit", sans-serif;
+  font-weight: bolder;
+}
+
+@media (max-width: 780px) {
+  .nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .grillas {
+    margin-left: 0%;
+  }
+  .grillasBoton {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 0px;
+  }
+  .grillas2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .modalFotoVino {
+    display: none;
+  }
+}
+
+.grillasPedidos {
+  margin-top: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 14px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 2%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.grillasPedidos .pedidoOrden {
+  background-color: #a2453d;
+  color: bisque;
+  font-family: "Niramit", sans-serif;
+  padding-left: 5px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 8px;
+  -webkit-box-shadow: 0 5px 5px #333;
+          box-shadow: 0 5px 5px #333;
+}
+
+.contenedorDetalle {
+  margin-top: 2%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 14px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+.contenedorDetalle .detalleGeneral {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,74 +899,55 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 5%;
 }
 
-.opcionesProductos1 .btn {
-  line-height: 35px;
-  height: 50px;
-  margin-left: 2px;
-  width: 230px;
-  cursor: pointer;
+.contenedorDetalle .detalleGeneral .aDetalle {
+  color: #333;
+  margin-top: 1.5%;
 }
 
-.opcionesProductos1 .btn-two {
-  color: #a2453d;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  position: relative;
+.contenedorDetalle .detalleOrganizados {
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  -webkit-box-shadow: 0 5px 5px #333;
+          box-shadow: 0 5px 5px #333;
 }
 
-.opcionesProductos1 .btn-two span {
-  z-index: 500;
-  display: block;
-  text-align: center;
-  width: 100%;
-  height: 100%;
+.contenedorDetalle .detalleOrganizados .imagenDetalle {
+  width: 15%;
 }
 
-.opcionesProductos1 .btn-two::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border: 1px solid #a2453d;
+.contenedorDetalle .detalleOrganizados .explicacionDetalle {
+  margin-left: 5%;
+}
+
+.contenedorDetalle .detalleOrganizados .explicacionDetalle .tituloDetalle {
+  font-family: "Niramit", sans serif;
+  font-size: 20px;
+  color: bisque;
+}
+
+.contenedorDetalle .detalleOrganizados .explicacionDetalle .parrafoDetalle {
+  font-family: "Niramit", sans serif;
+  color: bisque;
+  padding-top: 2%;
+}
+
+.contenedorDetalle .detalleOrganizados:hover {
   background-color: #a2453d;
-}
-
-.opcionesProductos1 .btn-two::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  border: 1px solid #a2453d;
-  background-color: #a2453d;
-}
-
-.opcionesProductos1 .btn-two:hover::before {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-  background-color: rgba(255, 255, 255, 0);
-}
-
-.opcionesProductos1 .btn-two:hover::after {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background-color: rgba(255, 255, 255, 0);
 }
 /*# sourceMappingURL=estilos.css.map */

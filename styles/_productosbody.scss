@@ -1,0 +1,115 @@
+.grillas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+
+    .nav {
+        flex-wrap: nowrap;
+        align-items: center;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .grillasBoton{
+        display: flex;
+        flex-direction: column;
+        margin-right: 150px;
+        align-items: center;
+    }
+
+    .grillas2{
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .articulo1{
+            .card{
+                .card-body{
+                    .tituloVino{
+                        font-family: "Niramit", sans-serif;
+                        color: bisque;
+                        font-weight: bold;
+                        font-size: 20px;
+                        text-align: center;
+                    }
+                    .precio{
+                        text-align: center;
+                        font-family: "Niramit", sans-serif;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .modal-title{
+                font-family: "Niramit", sans-serif;
+                font-size: 25px;
+                font-weight: bold;
+                color: #a2453d;
+            }
+
+            .modalFotoVino{
+                width: 200px;
+                height: 200px;
+                margin-left: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .textoDescripcionVino{
+                margin-left: 10px;
+                margin-top: 10px;
+
+                .descripcionVino{
+                    text-align: center;
+                    font-family: "Niramit", sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+
+                .precioVino{
+                    font-size: 20px;
+                    color: #a2453d;
+                    font-family: "Niramit", sans-serif;
+                }
+            }
+        }
+    }
+
+    .botonPalabra{
+        color: #a2453d;
+        font-family: "Niramit", sans-serif;
+        font-weight: bolder;
+    }
+    
+}
+
+
+@media (max-width: 780px){
+
+    .nav{
+        align-items: center;
+    }
+
+    .grillas{
+        margin-left: 0%;
+    }
+
+    .grillasBoton{
+        justify-content: center;
+        align-items: center;
+        margin-right: 0px;
+    }
+    
+    .grillas2{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modalFotoVino{
+        display: none;
+    }
+}

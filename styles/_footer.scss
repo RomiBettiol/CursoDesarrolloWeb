@@ -33,10 +33,7 @@ footer{
             justify-content: space-between;
             width: 300px;
             margin-bottom: 5px;
-    
-            .pieDePagina{
-                width: 30px;
-            }
+
         }
     }
 
@@ -50,16 +47,15 @@ footer{
         .redes{
             justify-content: space-around;
             margin: auto;
+        }
 
-            .pieDePagina{
-                width: 30px;
-                height: 30px;
-            }
+        .parrafoFooter{
+            display: none;
         }
     }
 }
 
-@media (max-width: 780px){
+@media (max-width: 640px){
     .grillasPieInicio{
         height: 8vh;
 
@@ -68,9 +64,13 @@ footer{
             margin: auto;
 
             .pieDePagina{
-                width: 30px;
-                height: 30px;
+                width: 25px;
+                height: 25px;
             }
+        }
+
+        .parrafoFooter{
+            display: none;
         }
     }
 }

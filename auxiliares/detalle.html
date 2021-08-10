@@ -1,50 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!--SEO-->
-        <!--Keywords-->
-        <meta name="keywords" content="Vino, vinoteca, tragos, combos, alcohol, venta de vinos, ofertas vino">
-        <meta name="description" content="¿Buscas probar una nueva experiencia? En Pirume encontras todos los vinos, 
-        y tragos que quieras conocer, podrás comprarlos de manera fácil y rápida. PIRUME, la vinoteca del futuro.">
-        <!--Fin Seo-->
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="bost5/css/bootstrap.css">
-        <!--<link rel="stylesheet" href="css/estilos.css">-->
-        <link rel="stylesheet" href="styles/estilos.css">
-        <link rel = "preconnect" href = "https://fonts.googleapis.com">
-        <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
-        <link href ="https://fonts.googleapis.com/css2? family=Niramit: wght @ 200 & display=swap"rel =" stylesheet ">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
-        <title>PIRUME - VINOTECA / Inicio</title>
-    </head>
+<html lang="es">
+<head>
+    <!--SEO-->
+    <!--Keywords-->
+    <meta name="keywords" content="Vino,vinoteca, staff pirume, equipo pirume">
+    <meta name="description" content="Conocé el equipo PIRUME, para poder acercarte a nuestro staff, conocernos
+    y confiar en nosotros.">
+    <!--Fin Seo-->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../bost5/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Niramit: wght @ 200 & display = swap "rel =" stylesheet ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>PIRUME - VINOTECA / Nosotros</title>
+</head>
+<body>
+    <header class="grillasMenuInicio">
+        <img alt="logo de la empresa" id="apertura" src="../imagenes/logo.PNG">
+        <h1>PIRUME - VINOTECA</h1>
+        <p class="inicioSesion"><a href="../auxiliares/sesion.html">Iniciar Sesión</a></p>
+        <a href="../auxiliares/sesion.html"><img class="imgHeader" src="../imagenes/usuario.png"></a>
+    </header>
+    
+    <input type="checkbox" id="btn-menu">
+    <label class="labelMenu" for="btn-menu"><img class="lista" src="../imagenes/lista.png"></label>
+    <nav class="menuPrincipal">
+      <ul>
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="nosotros.html">NOSOTROS</a></li>
+        <li><a href="productos.html">PRODUCTOS</a></li>
+        <li><a href="ofertas.html">OFERTAS</a></li>
+        <li><a href="pedidos.html">PEDIDOS</a></li>
+      </ul>
+    </nav>
 
-    <body>
-      <div class="grillasMenu">
-        <header class="grillasMenuInicio">
-            <img alt="logo de la empresa" id="apertura" src="imagenes/logo.PNG">
-            <h1>PIRUME - VINOTECA</h1>
-            <p class="inicioSesion"><a href="auxiliares/sesion.html">Iniciar Sesión</a></p>
-            <a class="SesionFoto" href="auxiliares/sesion.html"><img class="imgHeader" src="imagenes/usuario.png"></a>
-        </header>
-
-        <input type="checkbox" id="btn-menu">
-        <label class="labelMenu" for="btn-menu"><img class="lista" src="imagenes/lista.png"></label>
-        <nav class="menuPrincipal">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="secciones/nosotros.html">NOSOTROS</a></li>
-            <li><a href="secciones/productos.html">PRODUCTOS</a></li>
-            <li><a href="secciones/ofertas.html">OFERTAS</a></li>
-            <li><a href="secciones/pedidos.html">PEDIDOS</a></li>
-          </ul>
-        </nav>
-
-      <div class="bannerInicio grillasBannerInicio">
-        <button class="buttonInicio"><a href="secciones/productos.html">VER PRODUCTOS</a></button>
-      </div>
-
-
-      <footer class="grillasPieInicio">
+    <div class="contenedorDetalle">
+        <div class="detalleGeneral">
+            <a class="aDetalle" href="../secciones/pedidos.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                </svg>
+            </a>
+            <h2>Detalles orden de compra N°586</h2>
+        </div>
+        <div class="detalleOrganizados">
+            <img class="imagenDetalle" src="../imagenes/blanco1.png">
+            <section class="explicacionDetalle">
+                <h3 class="tituloDetalle">PRECIO TOTAL $1097,98</h3>
+                <p class="parrafoDetalle">Cantidad: 2</p>
+                <p class="parrafoDetalle">Precio por unidad: $543,50</p>
+            </section>
+        </div>
+        <div class="detalleOrganizados">
+            <img class="imagenDetalle" src="../imagenes/blanco.png">
+            <section class="explicacionDetalle">
+                <h3 class="tituloDetalle">PRECIO TOTAL $1058,98</h3>
+                <p class="parrafoDetalle">Cantidad: 1</p>
+                <p class="parrafoDetalle">Precio por unidad: $1058,98</p>
+            </section>
+        </div>
+    </div>
+ 
+    <footer class="grillasPieInicio">
         <div class="parrafoRedes">
           <p class="parrafoFooter">PIRUME</p>
             <div class="redes">
@@ -63,6 +83,5 @@
             </div>
         </div>
       </footer>
-
-    </body>
+</body>
 </html>
