@@ -115,11 +115,8 @@ header .imgHeader {
   background-color: #333;
 }
 
-.labelMenu .lista {
-  width: 30px;
-  height: 30px;
-  margin-left: 8px;
-  margin-top: 5px;
+.labelMenu .imglista {
+  color: bisque;
 }
 
 .menuPrincipal {
