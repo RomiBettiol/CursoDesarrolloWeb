@@ -150,6 +150,14 @@ header .imgHeader {
   background-color: #a2453d;
 }
 
+@media (min-widht: 1200px) {
+  header {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 @media (max-width: 780px) {
   header {
     -webkit-box-pack: center;
@@ -361,6 +369,12 @@ footer .parrafoRedes .redes {
   height: 50px;
 }
 
+@media (min-widht: 1024px) {
+  .bannerInicio {
+    height: 66vh;
+  }
+}
+
 @media (max-width: 780px) {
   .bannerInicio {
     height: 68vh;
@@ -467,7 +481,7 @@ h2 {
   text-align: center;
 }
 
-@media (min-widht: 1366px) {
+@media (min-widht: 1200px) {
   .articulos {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -744,7 +758,6 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 150px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
