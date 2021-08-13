@@ -147,14 +147,6 @@ header .imgHeader {
   background-color: #a2453d;
 }
 
-@media (min-widht: 1200px) {
-  header {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-}
-
 @media (max-width: 780px) {
   header {
     -webkit-box-pack: center;
@@ -163,7 +155,7 @@ header .imgHeader {
     height: 18vh;
   }
   header h1 {
-    font-size: 30px;
+    font-size: 1.5em;
     margin-top: 60px;
     -ms-flex-preferred-size: 70%;
         flex-basis: 70%;
@@ -214,7 +206,7 @@ header .imgHeader {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
   header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -335,11 +327,7 @@ footer .parrafoRedes .redes {
         justify-content: space-around;
     margin: auto;
   }
-  .grillasPieInicio .redes .pieDePagina {
-    width: 25px;
-    height: 25px;
-  }
-  .grillasPieInicio .parrafoFooter {
+  .grillasPieInicio .redes .parrafoFooter {
     display: none;
   }
 }
@@ -355,7 +343,7 @@ footer .parrafoRedes .redes {
 
 .bannerInicio .buttonInicio {
   /*boton ver productos*/
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
   font-size: 16px;
   font-weight: bold;
   background-color: black;
@@ -364,12 +352,6 @@ footer .parrafoRedes .redes {
   border: #333;
   width: 200px;
   height: 50px;
-}
-
-@media (min-widht: 1024px) {
-  .bannerInicio {
-    height: 66vh;
-  }
 }
 
 @media (max-width: 780px) {
@@ -389,6 +371,23 @@ footer .parrafoRedes .redes {
   }
 }
 
+@media (max-width: 580px) {
+  .bannerInicio {
+    height: 68vh;
+  }
+  .bannerInicio .buttonInicio {
+    height: 15%;
+    width: 37%;
+    margin-top: 55%;
+    margin-left: 5%;
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .bannerInicio .buttonInicio a {
+    font-size: 0.8rem;
+  }
+}
+
 .container {
   width: 800px;
   margin: 45px 0;
@@ -401,12 +400,12 @@ footer .parrafoRedes .redes {
 .container .parrafoNosotros {
   margin-top: 25px;
   margin-left: 20%;
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
   font-size: 16px;
 }
 
 h2 {
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
   font-size: 35px;
   margin-left: 90px;
   margin-top: 25px;
@@ -462,7 +461,7 @@ h2 {
 }
 
 .articulos .containerPresentacion .presentacionParrafosNosotros {
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
   font-size: 14px;
   text-align: center;
   padding-left: 2px;
@@ -471,36 +470,11 @@ h2 {
 }
 
 .articulos .containerPresentacion .tituloNombreNosotros {
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
   color: bisque;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
-}
-
-@media (min-widht: 1200px) {
-  .articulos {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .articulos .containerPresentacion {
-    width: 80%;
-  }
-  .articulos .containerPresentacion .presentacionParrafosNosotros {
-    font-size: 20px;
-    font-weight: 300;
-  }
-  h2 {
-    font-size: 40px;
-    margin-left: 5%;
-  }
-  .container {
-    width: 100%;
-  }
-  .container .parrafoNosotros {
-    margin-left: 5%;
-    font-size: 23px;
-  }
 }
 
 @media (max-width: 780px) {
@@ -614,7 +588,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   padding: 20px;
-  margin-top: 10%;
+  margin-top: 3%;
   margin-bottom: 10%;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -771,7 +745,7 @@ h2 {
 }
 
 .grillas .grillas2 .articulo1 .card .card-body .tituloVino {
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
   color: bisque;
   font-weight: bold;
   font-size: 20px;
@@ -780,13 +754,13 @@ h2 {
 
 .grillas .grillas2 .articulo1 .card .card-body .precio {
   text-align: center;
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
   font-size: 16px;
   font-weight: bold;
 }
 
 .grillas .grillas2 .articulo1 .modal-title {
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
   font-size: 25px;
   font-weight: bold;
   color: #a2453d;
@@ -807,7 +781,7 @@ h2 {
 
 .grillas .grillas2 .articulo1 .textoDescripcionVino .descripcionVino {
   text-align: center;
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
   font-size: 16px;
   font-weight: bold;
 }
@@ -815,12 +789,12 @@ h2 {
 .grillas .grillas2 .articulo1 .textoDescripcionVino .precioVino {
   font-size: 20px;
   color: #a2453d;
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
 }
 
 .grillas .botonPalabra {
   color: #a2453d;
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
   font-weight: bolder;
 }
 
@@ -862,10 +836,10 @@ h2 {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 5px;
-  grid-row-gap: 14px;
+  grid-row-gap: 20px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 2%;
+  margin-bottom: 10px;
   margin-left: 5px;
   margin-right: 5px;
 }
@@ -873,7 +847,7 @@ h2 {
 .grillasPedidos .pedidoOrden {
   background-color: #a2453d;
   color: bisque;
-  font-family: "Niramit", sans-serif;
+  font-family: "Niramit", sans serif;
   padding-left: 5px;
   border-radius: 5px;
   display: -webkit-box;
@@ -899,7 +873,7 @@ h2 {
   grid-row-gap: 14px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 2%;
+  margin-bottom: 8%;
 }
 
 .contenedorDetalle .detalleGeneral {
@@ -939,11 +913,12 @@ h2 {
 }
 
 .contenedorDetalle .detalleOrganizados .imagenDetalle {
-  width: 15%;
+  width: 115px;
 }
 
 .contenedorDetalle .detalleOrganizados .explicacionDetalle {
-  margin-left: 5%;
+  margin-left: 2%;
+  margin-top: 1%;
 }
 
 .contenedorDetalle .detalleOrganizados .explicacionDetalle .tituloDetalle {

@@ -81,19 +81,13 @@ header{
     }
 }
 
-@media (min-widht: 1200px) {
-    header{
-        justify-content: space-evenly;
-    }
-}
-
 @media (max-width: 780px){
     header{
         justify-content: center;
         height: 18vh;
 
         h1{
-            font-size: 30px;
+            font-size: 1.5em;
             margin-top: 60px;
             flex-basis: 70%;
             text-align: center;
@@ -150,7 +144,7 @@ header{
     
 }
 
-@media (max-width: 640px){
+@media (max-width: 680px){
     header{
         justify-content: center;
         height: 18vh;
@@ -190,5 +184,3 @@ header{
         align-items: center;
     }   
 }
-    
-   

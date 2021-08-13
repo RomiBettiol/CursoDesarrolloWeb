@@ -6,7 +6,7 @@
     background-size: cover;
 
     .buttonInicio{ /*boton ver productos*/
-        font-family: "Niramit", sans-serif;
+        font-family: $titulo;
         font-size: 16px;
         font-weight: bold;
         background-color: black;
@@ -19,13 +19,6 @@
 
 
 }
-
-@media (min-widht: 1024px) {
-    .bannerInicio{
-        height: 66vh; 
-    } 
-}
-
 
 @media (max-width: 780px){
     .bannerInicio{
@@ -46,4 +39,21 @@
     }
 }
 
+@media (max-width: 580px){
+    .bannerInicio{
+        height: 68vh;
 
+        .buttonInicio{
+            height: 15%;
+            width: 37%;
+            margin-top: 55%;
+            margin-left: 5%;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+            0 10px 10px rgba(0,0,0,0.22);
+
+            a{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

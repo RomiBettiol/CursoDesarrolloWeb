@@ -7,13 +7,13 @@
     .parrafoNosotros{
         margin-top: 25px;
         margin-left: 20%;
-        font-family: "Niramit", sans-serif;
+        font-family: $titulo;
         font-size: 16px;
     }
 }
 
 h2{
-    font-family: "Niramit", sans-serif;
+    font-family: $titulo;
     font-size: ($nroLetras*2)+3;
     margin-left: 90px;
     margin-top: 25px;
@@ -56,7 +56,7 @@ h2{
         }
 
         .presentacionParrafosNosotros{
-            font-family: "Niramit", sans-serif;
+            font-family: $titulo;
             font-size: 14px;
             text-align: center;
             padding-left: 2px;
@@ -65,7 +65,7 @@ h2{
         }
 
         .tituloNombreNosotros{
-            font-family: "Niramit", sans-serif;
+            font-family: $titulo;
             color: bisque;
             font-weight: bold;
             font-size: 20px;
@@ -75,34 +75,6 @@ h2{
       }
 }
 
-@media (min-widht: 1200px){
-    .articulos{
-        flex-wrap: wrap;
-
-        .containerPresentacion{
-            width: 80%;
-
-            .presentacionParrafosNosotros{
-                font-size: 20px;
-                font-weight: 300;
-            }
-        }
-    }
-
-    h2{
-        font-size: 40px;
-        margin-left: 5%;
-    }
-
-    .container{
-        width: 100%;
-
-        .parrafoNosotros{
-            margin-left: 5%;
-            font-size: 23px;
-        }
-    }   
-}
 
 @media (max-width: 780px){
     .articulos{

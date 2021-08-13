@@ -63,16 +63,10 @@ footer{
             justify-content: space-around;
             margin: auto;
 
-            .pieDePagina{
-                width: 25px;
-                height: 25px;
-            }
+            .parrafoFooter{
+                display: none;
+                }
         }
+    }   
 
-        .parrafoFooter{
-            display: none;
-        }
-    }
 }
-
-
